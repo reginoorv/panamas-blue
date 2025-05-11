@@ -86,26 +86,26 @@ const StarServices = () => {
                   className={`w-full h-full object-cover transition-transform duration-700 ${hoverStates[index] ? 'scale-110' : 'scale-100'}`}
                 />
                 {/* Overlay gradien yang beranimasi */}
-                <div className={`absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent transition-opacity duration-500 ${hoverStates[index] ? 'opacity-90' : 'opacity-70'}`}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40 opacity-90"></div>
                 
                 {/* Garis aksen dengan animasi */}
-                <div className={`absolute left-0 bottom-0 h-1 bg-primary transition-all duration-500 ${hoverStates[index] ? 'w-full' : 'w-16'}`}></div>
+                <div className={`absolute left-0 bottom-0 h-2 bg-primary transition-all duration-500 ${hoverStates[index] ? 'w-full' : 'w-1/3'}`}></div>
                 
                 {/* Konten */}
                 <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                  <div className={`bg-primary h-14 w-14 rounded-lg flex items-center justify-center mb-4 transition-all duration-500 ${hoverStates[index] ? 'translate-y-0 rotate-0' : '-translate-y-2 rotate-12'}`}>
+                  <div className={`bg-primary h-14 w-14 rounded-lg flex items-center justify-center mb-4 transition-all duration-500 ${hoverStates[index] ? 'translate-y-0 rotate-0 scale-110' : '-translate-y-0 rotate-0 scale-100'}`}>
                     <ServiceIcon name={service.icon} />
                   </div>
                   <h3 className="text-xl font-semibold mb-3 font-poppins text-white">{service.title}</h3>
-                  <p className={`text-gray-200 transition-all duration-500 ${hoverStates[index] ? 'opacity-100 max-h-24' : 'opacity-80 max-h-16 overflow-hidden'}`}>
+                  <p className="text-gray-200 mb-4">
                     {service.description}
                   </p>
                   
-                  {/* Tombol "Lihat Detail" dengan animasi */}
-                  <div className={`mt-4 overflow-hidden transition-all duration-500 ${hoverStates[index] ? 'h-8 opacity-100' : 'h-0 opacity-0'}`}>
-                    <a href="#" className="inline-flex items-center text-primary group">
+                  {/* Tombol "Lihat Detail" selalu terlihat dengan animasi */}
+                  <div className="transition-all duration-500">
+                    <a href="#" className={`inline-flex items-center text-primary bg-black/40 px-4 py-2 rounded-md ${hoverStates[index] ? 'bg-primary text-white' : 'bg-black/40 text-primary'} group transition-all duration-300`}>
                       <span>Lihat Detail</span>
-                      <ChevronRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                      <ChevronRight className={`ml-1 h-4 w-4 transition-all duration-300 ${hoverStates[index] ? 'translate-x-1' : 'translate-x-0'}`} />
                     </a>
                   </div>
                 </div>
