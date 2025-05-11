@@ -4,10 +4,10 @@ import { useEffect, useState, useRef } from "react";
 
 // Definisikan gambar untuk setiap layanan
 const serviceImages = [
-  "https://images.unsplash.com/photo-1516822003754-cca485356ecb?q=80&w=1170&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1170&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1572353242348-8638f659f5b1?q=80&w=1170&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?q=80&w=1170&auto=format&fit=crop"
+  "https://scaleocean.com/web/image/27597-d6a4a89d/masalah-umum-dalam-konstruksi-jalan.jpg?access_token=7974e78a-2173-4602-b565-f09937a9052e",
+  "https://psualatberat.com/wp-content/uploads/2025/01/Jenis-Konstruksi-Jalan-Fungsi-dan-Tahap-Pengerjaannya.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrpFCIh1amT8-na46JsWgwmK7KU0sdYBQ4uEkLGj_6JrRQpLK8iYKFzfkJhnzVVAbH1as&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcfEtTm_AgnaBnqyCBoThB9SVcmvh_QN3zqdgyYr6DhmT6IhwUpOYqJOfd2WTcp6PlWys&usqp=CAU"
 ];
 
 const ServiceIcon = ({ name }: { name: string }) => {
