@@ -75,21 +75,21 @@ const BuildingDesign = () => {
           <div className={`grid grid-cols-2 gap-4 transition-all duration-1000 ${isInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             {/* Road construction main image */}
             <img 
-              src="https://images.unsplash.com/photo-1541474019392-1d7886d1bef2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=700" 
+              src="/src/assets/shane-mclendon-9jPJrfLTBi0-unsplash.jpg" 
               alt="Pekerja konstruksi jalan meninjau rencana" 
               className="rounded-lg h-full object-cover shadow-lg"
             />
             
             {/* Asphalt laying */}
             <img 
-              src="https://images.unsplash.com/photo-1589937187859-09b895d0aefc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=350" 
+              src="/src/assets/1200px-Road_construction_in_progress.jpg" 
               alt="Proses pengaspalan jalan" 
               className="rounded-lg h-40 object-cover shadow-lg"
             />
             
             {/* Highway construction */}
             <img 
-              src="https://images.unsplash.com/photo-1580400563505-839146e61df8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=350" 
+              src="/src/assets/jamar-penny-ZgmGq_eFmUs-unsplash.jpg" 
               alt="Konstruksi jalan tol dengan alat berat" 
               className="rounded-lg h-40 object-cover shadow-lg"
             />

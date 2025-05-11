@@ -55,12 +55,12 @@ export const teamMembers = [
   {
     name: "Ir. Budi Santoso",
     position: "Direktur Proyek",
-    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+    image: "/src/assets/mika-baumeister-sKV8Rgxopx0-unsplash.jpg"
   },
   {
     name: "Dr. Rina Wijaya",
     position: "Kepala Insinyur",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+    image: "/src/assets/1200px-Road_construction_in_progress.jpg"
   }
 ];
 
@@ -69,13 +69,13 @@ export const testimonials = [
     text: "PT Panamas Multi Konstruksi telah menyelesaikan proyek jalan tol kami tepat waktu dan sesuai anggaran. Perhatian mereka terhadap detail dan komunikasi selama proyek sangat luar biasa.",
     name: "Bambang Sugiarto",
     position: "Kepala Dinas PU Provinsi",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
+    image: "/src/assets/mika-baumeister-sKV8Rgxopx0-unsplash.jpg"
   },
   {
     text: "Kami telah bermitra dengan PT Panamas Multi Konstruksi dalam beberapa proyek besar, dan mereka selalu melampaui ekspektasi. Keahlian tim dan pendekatan inovatif mereka membuat mereka unggul dalam industri.",
     name: "Siti Rahayu",
     position: "Direktur PT Pembangunan Jaya",
-    image: "https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
+    image: "/src/assets/Emulsions-in-Road-Construction.jpg"
   }
 ];
 
