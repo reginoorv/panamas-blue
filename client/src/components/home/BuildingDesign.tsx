@@ -128,7 +128,7 @@ const BuildingDesign = () => {
                 style={{ transform: isHoveringImage[0] ? 'rotateY(-5deg) rotateX(5deg)' : 'rotateY(0) rotateX(0)' }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1170&auto=format&fit=crop" 
+                  src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/04/27/3333953653.jpg" 
                   alt="Pekerja konstruksi jalan meninjau rencana" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                 />
