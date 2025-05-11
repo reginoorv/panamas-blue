@@ -3,6 +3,11 @@ import { features } from "@/lib/constants";
 import { Check, ArrowRight, ChevronRight, ArrowUpRight } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
+// Import gambar secara langsung sebagai modul
+import imgConstruction from "../../assets/shane-mclendon-9jPJrfLTBi0-unsplash.jpg";
+import imgAsphalt from "../../assets/1200px-Road_construction_in_progress.jpg";
+import imgHighway from "../../assets/jamar-penny-ZgmGq_eFmUs-unsplash.jpg";
+
 const BuildingDesign = () => {
   const [isInView, setIsInView] = useState(false);
   const [activeFeature, setActiveFeature] = useState(0);
@@ -128,7 +133,7 @@ const BuildingDesign = () => {
                 style={{ transform: isHoveringImage[0] ? 'rotateY(-5deg) rotateX(5deg)' : 'rotateY(0) rotateX(0)' }}
               >
                 <img 
-                  src="/src/assets/shane-mclendon-9jPJrfLTBi0-unsplash.jpg" 
+                  src={imgConstruction} 
                   alt="Pekerja konstruksi jalan meninjau rencana" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                 />
@@ -170,7 +175,7 @@ const BuildingDesign = () => {
                   style={{ transform: isHoveringImage[1] ? 'scale(1.1)' : 'scale(1)' }}
                 >
                   <img 
-                    src="/src/assets/1200px-Road_construction_in_progress.jpg" 
+                    src={imgAsphalt} 
                     alt="Proses pengaspalan jalan" 
                     className="w-full h-full object-cover"
                   />
@@ -194,7 +199,7 @@ const BuildingDesign = () => {
                   style={{ transform: isHoveringImage[2] ? 'scale(1.1)' : 'scale(1)' }}
                 >
                   <img 
-                    src="/src/assets/jamar-penny-ZgmGq_eFmUs-unsplash.jpg" 
+                    src={imgHighway} 
                     alt="Konstruksi jalan tol dengan alat berat"
                     className="w-full h-full object-cover" 
                   />
