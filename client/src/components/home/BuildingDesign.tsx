@@ -170,7 +170,7 @@ const BuildingDesign = () => {
                   style={{ transform: isHoveringImage[1] ? 'scale(1.1)' : 'scale(1)' }}
                 >
                   <img 
-                    src="https://images.unsplash.com/photo-1572353242348-8638f659f5b1?q=80&w=1170&auto=format&fit=crop" 
+                    src="https://protect.cermati.com/wp-content/uploads/2024/03/shutterstock_2031423968-1-1.jpg" 
                     alt="Proses pengaspalan jalan" 
                     className="w-full h-full object-cover"
                   />
@@ -194,7 +194,7 @@ const BuildingDesign = () => {
                   style={{ transform: isHoveringImage[2] ? 'scale(1.1)' : 'scale(1)' }}
                 >
                   <img 
-                    src="https://images.unsplash.com/photo-1498084393753-b411b2d26b34?q=80&w=1170&auto=format&fit=crop" 
+                    src="https://protect.cermati.com/wp-content/uploads/2024/01/Shutterstock_2139159003-634x540.jpg" 
                     alt="Konstruksi jalan tol dengan alat berat"
                     className="w-full h-full object-cover" 
                   />
