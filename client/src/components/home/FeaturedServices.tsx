@@ -33,7 +33,7 @@ const FeaturedServices = () => {
           >
             <div className="relative overflow-hidden">
               <img 
-                src="/src/assets/Emulsions-in-Road-Construction.jpg" 
+                src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?q=80&w=1173&auto=format&fit=crop" 
                 alt="Konstruksi jalan tol" 
                 className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
               />

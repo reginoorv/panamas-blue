@@ -3,11 +3,6 @@ import { features } from "@/lib/constants";
 import { Check, ArrowRight, ChevronRight, ArrowUpRight } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
-// Import gambar secara langsung sebagai modul
-import imgConstruction from "../../assets/shane-mclendon-9jPJrfLTBi0-unsplash.jpg";
-import imgAsphalt from "../../assets/1200px-Road_construction_in_progress.jpg";
-import imgHighway from "../../assets/jamar-penny-ZgmGq_eFmUs-unsplash.jpg";
-
 const BuildingDesign = () => {
   const [isInView, setIsInView] = useState(false);
   const [activeFeature, setActiveFeature] = useState(0);
@@ -133,7 +128,7 @@ const BuildingDesign = () => {
                 style={{ transform: isHoveringImage[0] ? 'rotateY(-5deg) rotateX(5deg)' : 'rotateY(0) rotateX(0)' }}
               >
                 <img 
-                  src={imgConstruction} 
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1170&auto=format&fit=crop" 
                   alt="Pekerja konstruksi jalan meninjau rencana" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                 />
@@ -175,7 +170,7 @@ const BuildingDesign = () => {
                   style={{ transform: isHoveringImage[1] ? 'scale(1.1)' : 'scale(1)' }}
                 >
                   <img 
-                    src={imgAsphalt} 
+                    src="https://images.unsplash.com/photo-1572353242348-8638f659f5b1?q=80&w=1170&auto=format&fit=crop" 
                     alt="Proses pengaspalan jalan" 
                     className="w-full h-full object-cover"
                   />
@@ -199,7 +194,7 @@ const BuildingDesign = () => {
                   style={{ transform: isHoveringImage[2] ? 'scale(1.1)' : 'scale(1)' }}
                 >
                   <img 
-                    src={imgHighway} 
+                    src="https://images.unsplash.com/photo-1498084393753-b411b2d26b34?q=80&w=1170&auto=format&fit=crop" 
                     alt="Konstruksi jalan tol dengan alat berat"
                     className="w-full h-full object-cover" 
                   />

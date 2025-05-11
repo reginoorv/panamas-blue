@@ -38,7 +38,7 @@ const Hero = () => {
         <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
           {/* Road construction image */}
           <img 
-            src="/src/assets/Road-Contruction-Banner.jpg" 
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1170&auto=format&fit=crop" 
             alt="Konstruksi jalan modern dengan pekerja dan alat berat" 
             className="rounded-lg w-full h-auto object-cover shadow-2xl"
           />

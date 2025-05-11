@@ -4,10 +4,10 @@ import { useEffect, useState, useRef } from "react";
 
 // Definisikan gambar untuk setiap layanan
 const serviceImages = [
-  "/src/assets/Emulsions-in-Road-Construction.jpg",
-  "/src/assets/Road-Contruction-Banner.jpg",
-  "/src/assets/1200px-Road_construction_in_progress.jpg",
-  "/src/assets/jamar-penny-ZgmGq_eFmUs-unsplash.jpg"
+  "https://images.unsplash.com/photo-1516822003754-cca485356ecb?q=80&w=1170&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1170&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1572353242348-8638f659f5b1?q=80&w=1170&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?q=80&w=1170&auto=format&fit=crop"
 ];
 
 const ServiceIcon = ({ name }: { name: string }) => {
