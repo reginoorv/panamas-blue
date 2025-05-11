@@ -1,29 +1,51 @@
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Animasi ketika komponen di-mount
+    setIsVisible(true);
+  }, []);
+
   return (
-    <section className="bg-black text-white py-16 md:py-24 relative">
-      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-        <div className="space-y-6">
+    <section className="bg-black text-white py-16 md:py-24 relative overflow-hidden">
+      {/* Particle effect background */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute h-2 w-2 bg-primary rounded-full top-1/4 left-1/4 animate-ping" style={{ animationDuration: "3s" }}></div>
+        <div className="absolute h-3 w-3 bg-primary rounded-full top-1/2 left-1/3 animate-ping" style={{ animationDuration: "5s" }}></div>
+        <div className="absolute h-2 w-2 bg-primary rounded-full top-3/4 left-1/2 animate-ping" style={{ animationDuration: "4s" }}></div>
+        <div className="absolute h-4 w-4 bg-primary rounded-full top-1/4 left-2/3 animate-ping" style={{ animationDuration: "6s" }}></div>
+        <div className="absolute h-3 w-3 bg-primary rounded-full top-1/2 left-3/4 animate-ping" style={{ animationDuration: "7s" }}></div>
+      </div>
+
+      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center relative z-10">
+        <div className={`space-y-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
           <h1 className="text-4xl md:text-5xl font-bold font-poppins leading-tight">
-            Engineering The <span className="text-primary">Extraordinary</span>
+            Membangun Jalan <span className="text-primary">Menuju Masa Depan</span>
           </h1>
           <p className="text-gray-300 text-lg">
-            We build world-class construction projects with uncompromised quality and safety standards.
+            PT Panamas Multi Konstruksi adalah perusahaan konstruksi jalan yang mengedepankan profesionalisme, kualitas, dan inovasi dalam setiap proyek.
           </p>
           <div className="pt-4">
-            <Button className="bg-primary hover:bg-orange-600 text-white px-8 py-6 h-auto rounded-md font-medium transition">
-              Get Started
+            <Button className="bg-primary hover:bg-orange-600 text-white px-8 py-6 h-auto rounded-md font-medium transition duration-300 hover:scale-105 group">
+              <span>Mulai Konsultasi</span>
+              <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
             </Button>
           </div>
         </div>
-        <div className="relative">
-          {/* Construction workers image */}
+        <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+          {/* Road construction image */}
           <img 
-            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=900" 
-            alt="Construction workers in safety gear" 
-            className="rounded-lg w-full h-auto object-cover"
+            src="https://images.unsplash.com/photo-1530085837875-33ada9eda400?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=900" 
+            alt="Konstruksi jalan modern dengan pekerja dan alat berat" 
+            className="rounded-lg w-full h-auto object-cover shadow-2xl"
           />
+          <div className="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-3 rounded-lg shadow-lg animate-pulse">
+            <span className="font-bold">24+ Tahun</span> 
+            <span className="block text-sm">Pengalaman Industri</span>
+          </div>
         </div>
       </div>
     </section>

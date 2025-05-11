@@ -1,116 +1,116 @@
 export const navLinks = [
-  { name: "Home", path: "/" },
-  { name: "Services", path: "#services" },
-  { name: "Projects", path: "#projects" },
-  { name: "About", path: "#about" },
-  { name: "Contact", path: "#contact" },
+  { name: "Beranda", path: "/" },
+  { name: "Layanan", path: "#services" },
+  { name: "Proyek", path: "#projects" },
+  { name: "Tentang Kami", path: "#about" },
+  { name: "Kontak", path: "#contact" },
 ];
 
 export const stats = [
-  { value: "240+", label: "Projects Completed" },
-  { value: "24+", label: "Years Experience" },
-  { value: "40+", label: "Expert Team" },
-  { value: "200K+", label: "Square Feet" },
+  { value: "240+", label: "Proyek Selesai" },
+  { value: "24+", label: "Tahun Pengalaman" },
+  { value: "40+", label: "Tim Ahli" },
+  { value: "2000+", label: "KM Jalan" },
 ];
 
 export const services = [
   {
-    title: "Commercial Pro",
-    description: "Specialized commercial construction services tailored to business needs.",
-    icon: "home"
+    title: "Konstruksi Jalan Tol",
+    description: "Membangun jalan tol dengan standar kualitas terbaik dan teknologi modern.",
+    icon: "road"
   },
   {
-    title: "Industrial Excellence",
-    description: "Comprehensive industrial construction solutions for manufacturing facilities.",
+    title: "Jalan Provinsi & Kabupaten",
+    description: "Konstruksi jalan penghubung antar daerah dengan perhatian pada kualitas dan ketahanan.",
     icon: "building"
   },
   {
-    title: "Residential Quality",
-    description: "Premium residential construction creating beautiful, functional homes.",
+    title: "Jembatan & Infrastruktur",
+    description: "Pembangunan jembatan dan infrastruktur pendukung jalan yang kokoh dan tahan lama.",
     icon: "hammer"
   },
   {
-    title: "Infrastructure Dev",
-    description: "Reliable infrastructure development for communities and cities.",
+    title: "Pemeliharaan Jalan",
+    description: "Layanan pemeliharaan jalan berkala untuk menjaga kualitas dan ketahanan jalan.",
     icon: "hard-hat"
   }
 ];
 
 export const features = [
   {
-    title: "Innovative Design Approach",
-    description: "Forward-thinking designs that anticipate future needs"
+    title: "Pendekatan Desain Inovatif",
+    description: "Teknik konstruksi jalan modern dengan antisipasi kebutuhan masa depan"
   },
   {
-    title: "Sustainable Building Practices",
-    description: "Eco-friendly construction that minimizes environmental impact"
+    title: "Standar Lingkungan Berkelanjutan",
+    description: "Konstruksi ramah lingkungan dengan dampak minimal terhadap ekosistem"
   },
   {
-    title: "Quality Materials Selection",
-    description: "Premium materials that ensure durability and longevity"
+    title: "Material Berkualitas Premium",
+    description: "Pemilihan material terbaik untuk memastikan ketahanan dan umur panjang jalan"
   }
 ];
 
 export const teamMembers = [
   {
-    name: "Dr. Carlo Alexander",
-    position: "Building Manager",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+    name: "Ir. Budi Santoso",
+    position: "Direktur Proyek",
+    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
   },
   {
-    name: "Dr. Sofia Douglas",
-    position: "Site Engineer",
-    image: "https://images.unsplash.com/photo-1508341591423-4347099e1f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+    name: "Dr. Rina Wijaya",
+    position: "Kepala Insinyur",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
   }
 ];
 
 export const testimonials = [
   {
-    text: "TeamBuild delivered our commercial complex ahead of schedule and within budget. Their attention to detail and communication throughout the project was exceptional.",
-    name: "David Anderson",
-    position: "CEO, Anderson Holdings",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
+    text: "PT Panamas Multi Konstruksi telah menyelesaikan proyek jalan tol kami tepat waktu dan sesuai anggaran. Perhatian mereka terhadap detail dan komunikasi selama proyek sangat luar biasa.",
+    name: "Bambang Sugiarto",
+    position: "Kepala Dinas PU Provinsi",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
   },
   {
-    text: "We've partnered with TeamBuild on multiple projects, and they consistently exceed expectations. Their team's expertise and innovative approach set them apart in the industry.",
-    name: "Sarah Miller",
-    position: "Director, Miller Enterprises",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
+    text: "Kami telah bermitra dengan PT Panamas Multi Konstruksi dalam beberapa proyek besar, dan mereka selalu melampaui ekspektasi. Keahlian tim dan pendekatan inovatif mereka membuat mereka unggul dalam industri.",
+    name: "Siti Rahayu",
+    position: "Direktur PT Pembangunan Jaya",
+    image: "https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
   }
 ];
 
 export const quickLinks = [
-  { name: "About Us", path: "#about" },
-  { name: "Our Services", path: "#services" },
-  { name: "Latest Projects", path: "#projects" },
-  { name: "Meet Our Team", path: "#team" },
-  { name: "Contact Us", path: "#contact" }
+  { name: "Tentang Kami", path: "#about" },
+  { name: "Layanan Kami", path: "#services" },
+  { name: "Proyek Terbaru", path: "#projects" },
+  { name: "Tim Ahli", path: "#team" },
+  { name: "Hubungi Kami", path: "#contact" }
 ];
 
 export const pageLinks = [
-  { name: "Case Studies", path: "#" },
-  { name: "Testimonials", path: "#testimonials" },
-  { name: "Pricing Plans", path: "#" },
-  { name: "Privacy Policy", path: "#" },
-  { name: "Terms & Conditions", path: "#" }
+  { name: "Studi Kasus", path: "#" },
+  { name: "Testimoni", path: "#testimonials" },
+  { name: "Karir", path: "#" },
+  { name: "Kebijakan Privasi", path: "#" },
+  { name: "Syarat & Ketentuan", path: "#" }
 ];
 
 export const contactInfo = [
   { 
     icon: "map-pin", 
-    text: "1234 Construction Ave, Building City, NY 10001" 
+    text: "Jl. Ahmad Yani No. 123, Jakarta Pusat, 10120" 
   },
   { 
     icon: "phone", 
-    text: "+1 (555) 123-4567" 
+    text: "+62 21 5678 1234" 
   },
   { 
     icon: "mail", 
-    text: "info@teambuild.com" 
+    text: "info@panamasmulti.co.id" 
   },
   { 
     icon: "clock", 
-    text: "Mon-Fri: 8:00 AM - 6:00 PM" 
+    text: "Senin-Jumat: 08.00 - 17.00 WIB" 
   }
 ];
 
