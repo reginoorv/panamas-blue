@@ -69,7 +69,8 @@ const StarServices = () => {
           <div className={`w-20 h-1 bg-primary mx-auto mt-4 transition-all duration-1000 ${isInView ? 'opacity-100 w-20' : 'opacity-0 w-0'}`}></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Grid yang responsif - 1 kolom di mobile, 2 di tablet, 4 di desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div 
               key={index} 
@@ -78,8 +79,8 @@ const StarServices = () => {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             >
-              {/* Background image dengan overlay gradien */}
-              <div className="relative h-64">
+              {/* Background image dengan overlay gradien - height yang adaptif */}
+              <div className="relative h-[320px] sm:h-[350px] md:h-[280px] lg:h-[340px] xl:h-[380px]">
                 <img 
                   src={serviceImages[index]} 
                   alt={service.title} 
@@ -91,19 +92,21 @@ const StarServices = () => {
                 {/* Garis aksen dengan animasi */}
                 <div className={`absolute left-0 bottom-0 h-2 bg-primary transition-all duration-500 ${hoverStates[index] ? 'w-full' : 'w-1/3'}`}></div>
                 
-                {/* Konten */}
-                <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                  <div className={`bg-primary h-14 w-14 rounded-lg flex items-center justify-center mb-4 transition-all duration-500 ${hoverStates[index] ? 'translate-y-0 rotate-0 scale-110' : '-translate-y-0 rotate-0 scale-100'}`}>
+                {/* Konten - padding yang responsif */}
+                <div className="absolute inset-0 p-4 sm:p-5 md:p-6 flex flex-col justify-end">
+                  <div className={`bg-primary h-12 w-12 sm:h-14 sm:w-14 rounded-lg flex items-center justify-center mb-3 sm:mb-4 transition-all duration-500 ${hoverStates[index] ? 'translate-y-0 rotate-0 scale-110' : '-translate-y-0 rotate-0 scale-100'}`}>
                     <ServiceIcon name={service.icon} />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 font-poppins text-white">{service.title}</h3>
-                  <p className="text-gray-200 mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 font-poppins text-white">{service.title}</h3>
+                  
+                  {/* Deskripsi dengan ukuran teks responsif dan baris yang terbatas */}
+                  <p className="text-sm sm:text-base text-gray-200 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
                     {service.description}
                   </p>
                   
                   {/* Tombol "Lihat Detail" selalu terlihat dengan animasi */}
-                  <div className="transition-all duration-500">
-                    <a href="#" className={`inline-flex items-center text-primary bg-black/40 px-4 py-2 rounded-md ${hoverStates[index] ? 'bg-primary text-white' : 'bg-black/40 text-primary'} group transition-all duration-300`}>
+                  <div className="transition-all duration-500 w-full flex justify-center sm:justify-start">
+                    <a href="#" className={`inline-flex items-center text-sm sm:text-base text-primary bg-black/40 px-3 py-1.5 sm:px-4 sm:py-2 rounded-md ${hoverStates[index] ? 'bg-primary text-white' : 'bg-black/40 text-primary'} group transition-all duration-300`}>
                       <span>Lihat Detail</span>
                       <ChevronRight className={`ml-1 h-4 w-4 transition-all duration-300 ${hoverStates[index] ? 'translate-x-1' : 'translate-x-0'}`} />
                     </a>
