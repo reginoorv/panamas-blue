@@ -60,7 +60,7 @@ export const teamMembers = [
   {
     name: "Dr. Rina Wijaya",
     position: "Kepala Insinyur",
-    image: "https://images.unsplash.com/photo-1573497019236-61f28a8c134d?q=80&w=1287&auto=format&fit=crop"
+    image: "https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjBoZWFkc2hvdHxlbnwwfHwwfHx8MA%3D%3D"
   }
 ];
 
