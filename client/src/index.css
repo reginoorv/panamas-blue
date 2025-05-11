@@ -10,42 +10,54 @@
     --card-foreground: 20 14.3% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
-    --primary: 24 100% 54%; /* #FF5E14 - orange color */
+    
+    /* Brand color updates */
+    --primary: 210 100% 28%; /* #004e8e - dark blue */
     --primary-foreground: 60 9.1% 97.8%;
-    --secondary: 60 4.8% 95.9%;
+    --secondary: 187 100% 46%; /* #00d8ec - light blue/cyan */
     --secondary-foreground: 24 9.8% 10%;
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-    --accent: 24 100% 54%;
+    --accent: 210 100% 28%; /* #004e8e - dark blue */
     --accent-foreground: 24 9.8% 10%;
+    
+    /* Additional brand color */
+    --brand-gray: 200 7% 70%; /* #aeb2b5 - gray */
+    
+    --muted: 200 7% 95%;
+    --muted-foreground: 25 5.3% 44.7%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
     --border: 20 5.9% 90%;
     --input: 20 5.9% 90%;
-    --ring: 24 100% 54%;
+    --ring: 210 100% 28%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 0 0% 0%; /* #000000 - black */
+    --background: 210 30% 10%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 0%;
+    --card: 210 30% 15%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 0%;
+    --popover: 210 30% 10%;
     --popover-foreground: 0 0% 98%;
-    --primary: 24 100% 54%; /* #FF5E14 - orange color */
+    
+    /* Brand color updates */
+    --primary: 187 100% 46%; /* #00d8ec - light blue/cyan */
     --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 8%; /* #111111 - dark gray */
+    --secondary: 210 100% 28%; /* #004e8e - dark blue */
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 24 100% 54%;
+    --accent: 187 100% 46%; /* #00d8ec - light blue/cyan */
     --accent-foreground: 0 0% 98%;
+    
+    /* Additional brand color */
+    --brand-gray: 200 7% 70%; /* #aeb2b5 - gray */
+    
+    --muted: 200 7% 20%;
+    --muted-foreground: 0 0% 63.9%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 24 100% 54%;
+    --border: 200 7% 25%;
+    --input: 200 7% 25%;
+    --ring: 187 100% 46%;
   }
 }
 
@@ -71,7 +83,7 @@
 }
 
 .primary-btn {
-  @apply inline-block bg-primary hover:bg-orange-600 text-white px-8 py-3 rounded-md font-medium transition;
+  @apply inline-block bg-primary hover:bg-secondary text-white px-8 py-3 rounded-md font-medium transition;
 }
 
 /* Custom animations */
@@ -90,5 +102,29 @@
 @layer utilities {
   .animate-float {
     animation: float 6s ease-in-out infinite;
+  }
+  
+  .text-brand-gray {
+    color: #aeb2b5;
+  }
+  
+  .bg-brand-gray {
+    background-color: #aeb2b5;
+  }
+  
+  .text-primary-dark {
+    color: #004e8e;
+  }
+  
+  .bg-primary-dark {
+    background-color: #004e8e;
+  }
+  
+  .text-secondary-light {
+    color: #00d8ec;
+  }
+  
+  .bg-secondary-light {
+    background-color: #00d8ec;
   }
 }
